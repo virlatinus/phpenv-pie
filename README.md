@@ -2,8 +2,13 @@
 
 ## How to use
 
-This project is a utility that downloads PIE (The PHP Installer for Extensions)
-and makes it availabe as a command for phpenv: `phpenv pie -V`
+This project is a tool that downloads PIE (The PHP Installer for Extensions)
+and makes it availabe as a plugin for phpenv: 
+
+```
+$ phpenv pie -V
+🥧 PHP Installer for Extensions (PIE) 1.3.8
+```
 
 ### Use standalone
 
