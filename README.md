@@ -11,7 +11,7 @@ and makes it availabe as a command for phpenv: `phpenv pie -V`
 % git clone https://github.com/virlatinus/phpenv-pie.git
 % cd phpenv-pie
 % sh install.sh
-% bin/phpenv-pie install <package_name>
+% bin/phpenv-pie install "vendor/package_name"
 ```
 
 ### Use phpenv plugins
@@ -20,7 +20,7 @@ and makes it availabe as a command for phpenv: `phpenv pie -V`
 % git clone https://github.com/virlatinus/phpenv-pie.git $PHPENV_ROOT/plugins/phpenv-pie
 % cd $PHPENV_ROOT/plugins/phpenv-pie
 % sh install.sh
-% phpenv pie install <package_name>
+% phpenv pie install "vendor/package_name"
 ```
 
 More information about PIE can be found on its repository: [https://github.com/php/pie](https://github.com/php/pie)
