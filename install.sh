@@ -20,6 +20,10 @@ command -v jq >/dev/null 3>&1 || die '"jq" is not installed'
 
 echo "Downloading PIE..."
 
+# Make sure we are on the correct directory
+OLD_DIR="$(pwd)"
+cd "$(dirname "$0")" || die "Unable to change directory"
+
 # Download latest release
 curl -#Lo "${FILE}" `curl -Ls "${URL}"|jq -r "${KEY}"`
 
@@ -31,5 +35,7 @@ chmod +x "${FILE}"
 
 echo "Installation complete, you can now run 'phpenv pie'"
 
-exit 0
+# Return to original directory
+cd "${OLD_DIR}"
 
+exit 0
