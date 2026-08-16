@@ -22,8 +22,8 @@ $ phpenv pie -V
 ### Use phpenv plugins
 
 ```
-% git clone https://github.com/virlatinus/phpenv-pie.git $PHPENV_ROOT/plugins/phpenv-pie
-% cd $PHPENV_ROOT/plugins/phpenv-pie
+% git clone https://github.com/virlatinus/phpenv-pie.git $(phpenv root)/plugins/phpenv-pie
+% cd $(phpenv root)/plugins/phpenv-pie
 % sh install.sh
 % phpenv pie install "vendor/package_name"
 ```
